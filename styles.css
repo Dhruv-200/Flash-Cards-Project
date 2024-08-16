@@ -78,6 +78,20 @@ header h1 {
 }
 
 .card-button {
+    min-width: 150px; /* set minimum width */
+    min-height: 50px; /* set minimum height */
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    width: 45%;
+    flex: 0 0 40%;
+    
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #000;
+    cursor: pointer;
+}
+.card-button {
     background-color: #c2c2a3;
     border: none;
     padding: 10px 20px;
@@ -113,11 +127,9 @@ header h1 {
     margin-bottom: 20px;
     width: 100%;
     max-width: 500px;
-    height: 100px;
-    max-height: 300px;
     box-sizing: border-box;
-    resize: vertical; /* Allow resizing vertically */
-    overflow-y: auto; /* Add a scrollbar when the content exceeds the height */
+    resize: none; /* Disable manual resizing */
+    overflow-y: hidden; /* Hide the scrollbar */
 }
 
 .create-quiz {
