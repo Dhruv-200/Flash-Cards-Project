@@ -131,9 +131,11 @@ header h1 {
     margin-bottom: 20px;
     width: 100%;
     max-width: 500px;
+    height: 100px; /* set initial height */
+    max-height: 200px; /* set maximum height */
     box-sizing: border-box;
-    resize: none; /* Disable manual resizing */
-    overflow-y: hidden; /* Hide the scrollbar */
+    resize: vertical; /* allow vertical resizing */
+    overflow-y: auto; /* show scrollbar when content exceeds max-height */
 }
 
 .createquiz {
@@ -166,7 +168,7 @@ header h1 {
     background-color: #ccc;
 }
 
-/* .or-text {
+.or-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -175,7 +177,7 @@ header h1 {
     padding: 0 10px;
     font-size: 16px;
     font-weight: bold;
-} */
+}
 
 /* Animation for the menu icon */
 .menuicon.open .bar1 {
