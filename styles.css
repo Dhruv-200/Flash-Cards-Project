@@ -10,23 +10,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  background-image: url(space.jpg);
+    /* background-color: #000; */
     height: 100vh;
-    background-color: #fff;
 }
 
 nav {
     position: absolute;
     top: 10px;
     left: 10px;
+    background-color: #0dc96b;
 }
 
-.menu-icon {
+.menuicon {
     cursor: pointer;
     width: 30px;
     height: 30px;
 }
 
-.menu-icon div {
+.menuicon div {
     width: 30px;
     height: 5px;
     background-color: black;
@@ -37,8 +39,10 @@ nav {
 header {
     position: absolute;
     top: 20px;
-    width: 100%;
+    width: auto;
+    
     text-align: center;
+
 }
 
 header h1 {
@@ -59,25 +63,25 @@ header h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.flash-cards {
+.flashcards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     width: 50%;
 }
 
-.flash-cards .card-button {
+.flashcards .card-button {
     flex: 0 0 45%;
     width: 45%;
 }
 
-.flash-cards {
+.flashcards {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.card-button {
+.cardbutton {
     min-width: 150px; /* set minimum width */
     min-height: 50px; /* set minimum height */
     padding: 10px 20px;
@@ -87,12 +91,12 @@ header h1 {
     flex: 0 0 40%;
     
     border-radius: 10px;
-    background-color: #4CAF50;
+    background-color: cyan;
     color: #000;
     cursor: pointer;
 }
-.card-button {
-    background-color: #c2c2a3;
+.cardbutton {
+    background-color: cyan;
     border: none;
     padding: 10px 20px;
     font-size: 40px;
@@ -105,12 +109,12 @@ header h1 {
     width: 45%;
 }
 
-.card-button:hover {
-    background-color: #b2b299;
+.cardbutton:hover {
+    background-color: cyan;
     transform: scale(1.1);
 }
 
-.quiz-section {
+.quizsection {
     width: 50%;
     padding-left: 20px;
     display: flex;
@@ -118,11 +122,11 @@ header h1 {
     align-items: center;
 }
 
-.quiz-section textarea {
+.quizsection textarea {
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
-    border: 2px solid #c2c2a3;
+    border: 2px solid cyan;
     border-radius: 5px;
     margin-bottom: 20px;
     width: 100%;
@@ -132,8 +136,8 @@ header h1 {
     overflow-y: hidden; /* Hide the scrollbar */
 }
 
-.create-quiz {
-    background-color: #c2c2a3;
+.createquiz {
+    background-color: cyan;
     border: none;
     padding: 15px 30px;
     font-size: 20px;
@@ -146,12 +150,12 @@ header h1 {
     text-align: center;
 }
 
-.create-quiz:hover {
-    background-color: #b2b299;
+.createquiz:hover {
+    background-color: cyan;
     transform: scale(1.1);
 }
 
-.vertical-divider {
+.verticaldivider {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +166,7 @@ header h1 {
     background-color: #ccc;
 }
 
-.or-text {
+/* .or-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -171,18 +175,18 @@ header h1 {
     padding: 0 10px;
     font-size: 16px;
     font-weight: bold;
-}
+} */
 
 /* Animation for the menu icon */
-.menu-icon.open .bar1 {
+.menuicon.open .bar1 {
     transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.menu-icon.open .bar2 {
+.menuicon.open .bar2 {
     opacity: 0;
 }
 
-.menu-icon.open .bar3 {
+.menuicon.open .bar3 {
     transform: rotate(45deg) translate(-6px, -6px);
 }
 
@@ -194,12 +198,12 @@ header h1 {
         padding: 10px;
     }
 
-    .card-button {
+    .cardbutton {
         padding: 10px 20px;
         font-size: 16px;
     }
 
-    .create-quiz {
+    .createquiz {
         padding: 10px 20px;
         font-size: 16px;
     }
@@ -208,7 +212,7 @@ header h1 {
         font-size: 28px;
     }
 
-    .quiz-section textarea {
+    .quizsection textarea {
         padding: 8px;
         font-size: 16px;
         max-width: 90%;
@@ -237,7 +241,7 @@ header h1 {
         font-size: 24px;
     }
 
-    .quiz-section textarea {
+    .quizsection textarea {
         padding: 6px;
         font-size: 14px;
         max-width: 100%;
