@@ -10,25 +10,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  background-image: url(space.jpg);
-    /* background-color: #000; */
     height: 100vh;
+    background: url('Back.png') no-repeat center center fixed;
+    background-size: cover;
+        color: white;
 }
 
 nav {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #0dc96b;
 }
 
-.menuicon {
+.menu-icon {
     cursor: pointer;
     width: 30px;
     height: 30px;
 }
 
-.menuicon div {
+.menu-icon div {
     width: 30px;
     height: 5px;
     background-color: black;
@@ -39,10 +39,8 @@ nav {
 header {
     position: absolute;
     top: 20px;
-    width: auto;
-    
+    width: 100%;
     text-align: center;
-
 }
 
 header h1 {
@@ -63,25 +61,25 @@ header h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.flashcards {
+.flash-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     width: 50%;
 }
 
-.flashcards .card-button {
+.flash-cards .card-button {
     flex: 0 0 45%;
     width: 45%;
 }
 
-.flashcards {
+.flash-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.cardbutton {
+.card-button {
     min-width: 150px; /* set minimum width */
     min-height: 50px; /* set minimum height */
     padding: 10px 20px;
@@ -91,12 +89,12 @@ header h1 {
     flex: 0 0 40%;
     
     border-radius: 10px;
-    background-color: cyan;
+    background-color: yellow;
     color: #000;
     cursor: pointer;
 }
-.cardbutton {
-    background-color: cyan;
+.card-button {
+    background-color: yellow;
     border: none;
     padding: 10px 20px;
     font-size: 40px;
@@ -109,12 +107,12 @@ header h1 {
     width: 45%;
 }
 
-.cardbutton:hover {
-    background-color: cyan;
+.card-button:hover {
+    background-color: yellow;
     transform: scale(1.1);
 }
 
-.quizsection {
+.quiz-section {
     width: 50%;
     padding-left: 20px;
     display: flex;
@@ -122,24 +120,22 @@ header h1 {
     align-items: center;
 }
 
-.quizsection textarea {
+.quiz-section textarea {
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
-    border: 2px solid cyan;
+    border: 2px solid #c2c2a3;
     border-radius: 5px;
     margin-bottom: 20px;
     width: 100%;
     max-width: 500px;
-    height: 100px; /* set initial height */
-    max-height: 200px; /* set maximum height */
     box-sizing: border-box;
-    resize: vertical; /* allow vertical resizing */
-    overflow-y: auto; /* show scrollbar when content exceeds max-height */
+    resize: none; /* Disable manual resizing */
+    overflow-y: hidden; /* Hide the scrollbar */
 }
 
-.createquiz {
-    background-color: cyan;
+.create-quiz {
+    background-color: yellow;
     border: none;
     padding: 15px 30px;
     font-size: 20px;
@@ -152,20 +148,20 @@ header h1 {
     text-align: center;
 }
 
-.createquiz:hover {
-    background-color: cyan;
+.create-quiz:hover {
+    background-color: yellow;
     transform: scale(1.1);
 }
 
-.verticaldivider {
+.vertical-divider {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     top: 0;
     left: 50%;
     height: 50vh;
     width: 1px;
-    background-color: #ccc;
+    background-color: yellow;
 }
 
 .or-text {
@@ -180,15 +176,15 @@ header h1 {
 }
 
 /* Animation for the menu icon */
-.menuicon.open .bar1 {
+.menu-icon.open .bar1 {
     transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.menuicon.open .bar2 {
+.menu-icon.open .bar2 {
     opacity: 0;
 }
 
-.menuicon.open .bar3 {
+.menu-icon.open .bar3 {
     transform: rotate(45deg) translate(-6px, -6px);
 }
 
@@ -200,12 +196,12 @@ header h1 {
         padding: 10px;
     }
 
-    .cardbutton {
+    .card-button {
         padding: 10px 20px;
         font-size: 16px;
     }
 
-    .createquiz {
+    .create-quiz {
         padding: 10px 20px;
         font-size: 16px;
     }
@@ -214,7 +210,7 @@ header h1 {
         font-size: 28px;
     }
 
-    .quizsection textarea {
+    .quiz-section textarea {
         padding: 8px;
         font-size: 16px;
         max-width: 90%;
@@ -243,7 +239,7 @@ header h1 {
         font-size: 24px;
     }
 
-    .quizsection textarea {
+    .quiz-section textarea {
         padding: 6px;
         font-size: 14px;
         max-width: 100%;
