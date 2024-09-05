@@ -81,36 +81,38 @@ function selectAnswer(questionIndex, option, button) {
 }
 
 submitButton.addEventListener('click', () => {
-    score = 0;
+    score = 0; 
     
-    // Iterate through each question
     quizData.forEach((q, index) => {
         const buttons = document.querySelectorAll(`.question-container:nth-child(${index + 1}) .option-btn`);
-        let correctButton;
         
-        // Mark the correct answer with a green border
+        
+        if (selectedAnswers[index] === q.correct) {
+            score++; 
+        }
+        
+        // Mark the correct and incorrect answers
         buttons.forEach((btn, btnIndex) => {
             const option = ['a', 'b', 'c', 'd'][btnIndex];
             
             if (option === q.correct) {
-                btn.classList.add('correct'); // Highlight correct answer in green
-                correctButton = btn;
+                btn.classList.add('correct'); 
             }
 
-            // If the selected answer is correct, increment score
-            if (selectedAnswers[index] === q.correct) {
-                score++;
-            } else if (selectedAnswers[index] === option) {
-                btn.classList.add('incorrect'); // Mark incorrect selections
+            if (selectedAnswers[index] === option && option !== q.correct) {
+                btn.classList.add('incorrect'); 
             }
         });
     });
 
+    
     result.textContent = `You scored ${score}/${quizData.length}`;
     result.style.display = 'block';
+    
+    
     submitButton.style.display = 'none';
     homeButton.style.display = 'block';
 });
 
-// Load the quiz initially
+
 loadQuiz();
