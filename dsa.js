@@ -1,148 +1,116 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const myQuestions = [
-        {
-            question: "Which data structure uses FIFO (First In First Out) principle?",
-            answers: {
-                a: "Stack",
-                b: "Queue",
-                c: "Tree"
-            },
-            correctAnswer: "b"
-        },
-        {
-            question: "What is the time complexity of binary search?",
-            answers: {
-                a: "O(n)",
-                b: "O(log n)",
-                c: "O(n log n)"
-            },
-            correctAnswer: "b"
-        },
-        {
-            question: "Which data structure is used for implementing recursion?",
-            answers: {
-                a: "Queue",
-                b: "Graph",
-                c: "Stack"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "Which of the following is a linear data structure?",
-            answers: {
-                a: "Array",
-                b: "Graph",
-                c: "Tree"
-            },
-            correctAnswer: "a"
-        },
-        {
-            question: "What is the time complexity of inserting an element in a stack?",
-            answers: {
-                a: "O(1)",
-                b: "O(log n)",
-                c: "O(n)"
-            },
-            correctAnswer: "a"
-        },
-        {
-            question: "Which data structure is used in breadth-first search (BFS) of a graph?",
-            answers: {
-                a: "Stack",
-                b: "Queue",
-                c: "Tree"
-            },
-            correctAnswer: "b"
-        },
-        {
-            question: "What does the following function perform: push(x), pop()?",
-            answers: {
-                a: "Queue operations",
-                b: "Stack operations",
-                c: "Tree operations"
-            },
-            correctAnswer: "b"
-        },
-        {
-            question: "Which data structure is most suitable for implementing a priority queue?",
-            answers: {
-                a: "Array",
-                b: "Linked List",
-                c: "Heap"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "What is the worst-case time complexity of quicksort?",
-            answers: {
-                a: "O(n^2)",
-                b: "O(n log n)",
-                c: "O(n)"
-            },
-            correctAnswer: "a"
-        },
-        {
-            question: "Which data structure is used in depth-first search (DFS) of a graph?",
-            answers: {
-                a: "Stack",
-                b: "Queue",
-                c: "Heap"
-            },
-            correctAnswer: "a"
-        }
-    ];
-
-    function buildQuiz() {
-        const output = [];
-        myQuestions.forEach((currentQuestion, questionNumber) => {
-            const answers = [];
-            for (let letter in currentQuestion.answers) {
-                answers.push(
-                    `<label>
-                        <input type="radio" name="question${questionNumber}" value="${letter}">
-                        ${letter}: ${currentQuestion.answers[letter]}
-                    </label>`
-                );
-            }
-            output.push(
-                `<div class="question">${currentQuestion.question}</div>
-                <div class="answers">${answers.join('')}</div>`
-            );
-        });
-        quizContainer.innerHTML = output.join('');
+const quizData = [
+    {
+        question: "What is the time complexity of binary search?",
+        a: "O(n)",
+        b: "O(log n)",
+        c: "O(n^2)",
+        d: "O(1)",
+        correct: "b"
+    },
+    {
+        question: "Which data structure uses LIFO?",
+        a: "Queue",
+        b: "Stack",
+        c: "Array",
+        d: "Linked List",
+        correct: "b"
+    },
+    {
+        question: "What is the best case time complexity of bubble sort?",
+        a: "O(n)",
+        b: "O(n log n)",
+        c: "O(n^2)",
+        d: "O(log n)",
+        correct: "a"
+    },
+    {
+        question: "Which is an example of a dynamic data structure?",
+        a: "Array",
+        b: "Stack",
+        c: "Queue",
+        d: "Linked List",
+        correct: "d"
+    },
+    {
+        question: "What does 'DSA' stand for?",
+        a: "Data Systems Algorithm",
+        b: "Data Structures Algorithm",
+        c: "Data Structures and Algorithms",
+        d: "Dynamic Systems and Algorithms",
+        correct: "c"
     }
+];
 
-    function showResults() {
-        const answerContainers = quizContainer.querySelectorAll('.answers');
-        let numCorrect = 0;
-        myQuestions.forEach((currentQuestion, questionNumber) => {
-            const answerContainer = answerContainers[questionNumber];
-            const selector = `input[name=question${questionNumber}]:checked`;
-            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+const quiz = document.getElementById('quiz');
+const submitButton = document.getElementById('submit');
+const result = document.getElementById('result');
+const homeButton = document.getElementById('home');
+let score = 0;
+let selectedAnswers = {};
 
-            if (userAnswer === currentQuestion.correctAnswer) {
-                numCorrect++;
-            }
+function loadQuiz() {
+    quiz.innerHTML = '';
+
+    quizData.forEach((q, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('question-container');
+
+        const questionTitle = document.createElement('h3');
+        questionTitle.textContent = `${index + 1}. ${q.question}`;
+        questionDiv.appendChild(questionTitle);
+
+        ['a', 'b', 'c', 'd'].forEach(option => {
+            const button = document.createElement('button');
+            button.classList.add('option-btn');
+            button.textContent = q[option];
+            button.onclick = () => selectAnswer(index, option, button);
+            questionDiv.appendChild(button);
         });
 
-        quizContainer.classList.add('hidden');
-        submitButton.classList.add('hidden');
-
-        resultsContainer.innerHTML = `You scored ${numCorrect} out of ${myQuestions.length}.`;
-        resultsContainer.classList.remove('hidden');
-        homeButton.classList.remove('hidden');
-    }
-
-    const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
-    const submitButton = document.getElementById('submit');
-    const homeButton = document.getElementById('home');
-
-    buildQuiz();
-
-    submitButton.addEventListener('click', showResults);
-
-    homeButton.addEventListener('click', function() {
-        window.location.href = 'index.html';
+        quiz.appendChild(questionDiv);
     });
+}
+
+function selectAnswer(questionIndex, option, button) {
+    const buttons = document.querySelectorAll(`.question-container:nth-child(${questionIndex + 1}) .option-btn`);
+    
+    buttons.forEach(btn => btn.classList.remove('selected'));
+    
+    button.classList.add('selected');
+    selectedAnswers[questionIndex] = option;
+}
+
+submitButton.addEventListener('click', () => {
+    score = 0;
+    
+    // Iterate through each question
+    quizData.forEach((q, index) => {
+        const buttons = document.querySelectorAll(`.question-container:nth-child(${index + 1}) .option-btn`);
+        let correctButton;
+        
+        // Mark the correct answer with a green border
+        buttons.forEach((btn, btnIndex) => {
+            const option = ['a', 'b', 'c', 'd'][btnIndex];
+            
+            if (option === q.correct) {
+                btn.classList.add('correct'); // Highlight correct answer in green
+                correctButton = btn;
+            }
+
+            // If the selected answer is correct, increment score
+            if (selectedAnswers[index] === q.correct) {
+                score++;
+            } else if (selectedAnswers[index] === option) {
+                btn.classList.add('incorrect'); // Mark incorrect selections
+            }
+        });
+    });
+
+    result.textContent = `You scored ${score}/${quizData.length}`;
+    result.style.display = 'block';
+    submitButton.style.display = 'none';
+    homeButton.style.display = 'block';
 });
+
+// Load the quiz initially
+loadQuiz();

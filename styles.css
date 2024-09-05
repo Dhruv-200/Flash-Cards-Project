@@ -1,5 +1,14 @@
-* {
+@font-face {
+    font-family: 'Blanka';
+    src: url('Blanka-Regular.otf')format('truetype');
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
     color: black;
+    font-family: 'Blanka', sans-serif; /* Apply Blanka font */
 }
 
 body {
@@ -13,8 +22,9 @@ body {
     height: 100vh;
     background: url('Back.png') no-repeat center center fixed;
     background-size: cover;
-        color: white;
+    color: white;
 }
+
 
 nav {
     position: absolute;

@@ -8,12 +8,17 @@
 </head>
 <body>
     <div class="quiz-container">
-        <h1>DSA Quiz</h1>
-        <div id="quiz"></div>
+        <header>
+            <h1>DSA Quiz</h1>
+        </header>
+        <div id="quiz">
+            <!-- Quiz questions will be injected here by JavaScript -->
+        </div>
         <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
-        <button id="home" class="hidden">Home</button>
+        <div id="result"></div>
+        <button id="home" onclick="location.href='index.html'" style="display:none;">Home</button>
     </div>
+
     <script src="dsa.js"></script>
 </body>
 </html>
