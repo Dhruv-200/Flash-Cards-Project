@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('Back.png') no-repeat center center fixed;
+    background: linear-gradient(135deg, #ffffff93, #5338ca);
     background-size: cover;
     color: white;
 }
@@ -90,21 +90,21 @@ header h1 {
 }
 
 .card-button {
-    min-width: 150px; /* set minimum width */
-    min-height: 50px; /* set minimum height */
+    min-width: 150px; 
+    min-height: 50px; 
     padding: 10px 20px;
     font-size: 18px;
     border: none;
     width: 45%;
     flex: 0 0 40%;
-    
+
     border-radius: 10px;
-    background-color: yellow;
-    color: #000;
+    background-color: rgb(137, 63, 233);
+    color: #ffffff;
     cursor: pointer;
 }
 .card-button {
-    background-color: yellow;
+    background-color: rgb(137, 63, 233);
     border: none;
     padding: 10px 20px;
     font-size: 40px;
@@ -118,7 +118,7 @@ header h1 {
 }
 
 .card-button:hover {
-    background-color: yellow;
+    background-color: rgb(93, 64, 255);
     transform: scale(1.1);
 }
 
@@ -140,12 +140,12 @@ header h1 {
     width: 100%;
     max-width: 500px;
     box-sizing: border-box;
-    resize: none; /* Disable manual resizing */
-    overflow-y: hidden; /* Hide the scrollbar */
+    resize: none;
+    overflow-y: hidden; 
 }
 
 .create-quiz {
-    background-color: yellow;
+    background-color: rgb(137, 63, 233);
     border: none;
     padding: 15px 30px;
     font-size: 20px;
@@ -159,7 +159,7 @@ header h1 {
 }
 
 .create-quiz:hover {
-    background-color: yellow;
+    background-color: rgb(93, 64, 255);
     transform: scale(1.1);
 }
 

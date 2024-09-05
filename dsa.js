@@ -1,3 +1,4 @@
+
 const quizData = [
     {
         question: "What is the time complexity of binary search?",
@@ -91,7 +92,6 @@ submitButton.addEventListener('click', () => {
             score++; 
         }
         
-        // Mark the correct and incorrect answers
         buttons.forEach((btn, btnIndex) => {
             const option = ['a', 'b', 'c', 'd'][btnIndex];
             
