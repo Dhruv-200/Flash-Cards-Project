@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <p>This is a test page
-    </p>
-    <a href="index.html">Home</a>
+    <title>Python Quiz</title>
+    <link rel="stylesheet" href="python.css">
 </head>
 <body>
-    
+       <div class="quiz-container">
+        <header>
+            <h1>Python Quiz</h1>
+        </header>
+        <div id="quiz">
+        </div>
+        <button id="submit">Submit Quiz</button>
+        <div id="result"></div>
+        <button id="home" onclick="location.href='index.html'" style="display:none;">Home</button>
+    </div>
+
+    <script src="python.js"></script>
 </body>
 </html>

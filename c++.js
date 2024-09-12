@@ -1,46 +1,46 @@
-
-quizData = [
+const quizData = [
     {
-        question: "What is the time complexity of binary search?",
-        a: "O(n)",
-        b: "O(log n)",
-        c: "O(n^2)",
-        d: "O(1)",
-        correct: "b"
-    },
-    {
-        question: "Which data structure uses LIFO?",
-        a: "Queue",
-        b: "Stack",
-        c: "Array",
-        d: "Linked List",
-        correct: "b"
-    },
-    {
-        question: "What is the best case time complexity of bubble sort?",
-        a: "O(n)",
-        b: "O(n log n)",
-        c: "O(n^2)",
-        d: "O(log n)",
+        question: "Which header file is necessary for input and output operations in C++?",
+        a: "<iostream>",
+        b: "<stdio.h>",
+        c: "<stdlib.h>",
+        d: "<inputoutput>",
         correct: "a"
     },
     {
-        question: "Which is an example of a dynamic data structure?",
-        a: "Array",
-        b: "Stack",
-        c: "Queue",
-        d: "Linked List",
-        correct: "d"
+        question: "What is the correct syntax to create a class in C++?",
+        a: "class MyClass {}",
+        b: "class MyClass[]",
+        c: "create class MyClass {}",
+        d: "struct MyClass {}",
+        correct: "a"
     },
     {
-        question: "What does 'DSA' stand for?",
-        a: "Data Systems Algorithm",
-        b: "Data Structures Algorithm",
-        c: "Data Structures and Algorithms",
-        d: "Dynamic Systems and Algorithms",
-        correct: "c"
+        question: "Which operator is used to access members of a class or structure in C++?",
+        a: ".",
+        b: "->",
+        c: "::",
+        d: "#",
+        correct: "a"
+    },
+    {
+        question: "What is the output of the following code? `int x = 5; std::cout << ++x;`",
+        a: "5",
+        b: "6",
+        c: "7",
+        d: "error",
+        correct: "b"
+    },
+    {
+        question: "What is the purpose of the `#include` directive in C++?",
+        a: "To include code from other files",
+        b: "To define constants",
+        c: "To declare variables",
+        d: "To create functions",
+        correct: "a"
     }
 ];
+
 
 const quiz = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');

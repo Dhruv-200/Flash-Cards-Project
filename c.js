@@ -1,44 +1,44 @@
 
 quizData = [
     {
-        question: "What is the time complexity of binary search?",
-        a: "O(n)",
-        b: "O(log n)",
-        c: "O(n^2)",
-        d: "O(1)",
-        correct: "b"
+        question: "Which of the following is NOT a valid C data type?",
+        a: "int",
+        b: "float",
+        c: "string",
+        d: "char",
+        correct: "c"
     },
     {
-        question: "Which data structure uses LIFO?",
-        a: "Queue",
-        b: "Stack",
-        c: "Array",
-        d: "Linked List",
-        correct: "b"
+        question: "Which of the following operators has the highest precedence in C?",
+        a: "+",
+        b: "*",
+        c: "++",
+        d: "-",
+        correct: "c"
     },
     {
-        question: "What is the best case time complexity of bubble sort?",
-        a: "O(n)",
-        b: "O(n log n)",
-        c: "O(n^2)",
-        d: "O(log n)",
+        question: "What keyword is used to define a constant value in C",
+        a: "const",
+        b: "constant",
+        c: "fixed",
+        d: "none",
         correct: "a"
     },
     {
-        question: "Which is an example of a dynamic data structure?",
-        a: "Array",
-        b: "Stack",
-        c: "Queue",
-        d: "Linked List",
-        correct: "d"
+        question: "What is the data type used to represent a single character in C?",
+        a: "char",
+        b: "string",
+        c: "double",
+        d: "letter",
+        correct: "a"
     },
     {
-        question: "What does 'DSA' stand for?",
-        a: "Data Systems Algorithm",
-        b: "Data Structures Algorithm",
-        c: "Data Structures and Algorithms",
-        d: "Dynamic Systems and Algorithms",
-        correct: "c"
+        question: "What is the keyword used to include standard libraries in C programs?",
+        a: "import",
+        b: "include",
+        c: "add",
+        d: "inherit",
+        correct: "b"
     }
 ];
 

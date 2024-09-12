@@ -1,44 +1,44 @@
 
 quizData = [
     {
-        question: "What is the time complexity of binary search?",
-        a: "O(n)",
-        b: "O(log n)",
-        c: "O(n^2)",
-        d: "O(1)",
+        question: "Basic Syntax What is the correct way to declare a variable in Java that holds an integer value?",
+        a: "integer num =10",
+        b: "int num = 10",
+        c: "num = 10",
+        d: "int = 10",
         correct: "b"
     },
     {
-        question: "Which data structure uses LIFO?",
-        a: "Queue",
-        b: "Stack",
-        c: "Array",
-        d: "Linked List",
+        question: "Object-Oriented Programming In Java, what is the access modifier that allows a member of a class to be accessible only within the same package?",
+        a: "Public",
+        b: "Private",
+        c: "Default",
+        d: "Protected",
+        correct: "c"
+    },
+    {
+        question: "Collections Framework Which of the following Java collection classes implements the List interface?",
+        a: "Hashset",
+        b: "ArrayList",
+        c: "HashMap",
+        d: "TreeSet",
         correct: "b"
     },
     {
-        question: "What is the best case time complexity of bubble sort?",
-        a: "O(n)",
-        b: "O(n log n)",
-        c: "O(n^2)",
-        d: "O(log n)",
+        question: "How do you declare an array of integers in Java?",
+        a: "int[] arr",
+        b: "integer[] arr",
+        c: "int.[] arr",
+        d: "int arr",
         correct: "a"
     },
     {
-        question: "Which is an example of a dynamic data structure?",
-        a: "Array",
-        b: "Stack",
-        c: "Queue",
-        d: "Linked List",
-        correct: "d"
-    },
-    {
-        question: "What does 'DSA' stand for?",
-        a: "Data Systems Algorithm",
-        b: "Data Structures Algorithm",
-        c: "Data Structures and Algorithms",
-        d: "Dynamic Systems and Algorithms",
-        correct: "c"
+        question: "What keyword is used to inherit a class in Java?",
+        a: "extends",
+        b: "new",
+        c: "inherites",
+        d: "class",
+        correct: "a"
     }
 ];
 

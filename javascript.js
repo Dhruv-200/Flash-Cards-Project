@@ -1,46 +1,47 @@
-
-quizData = [
+const quizData = [
     {
-        question: "What is the time complexity of binary search?",
-        a: "O(n)",
-        b: "O(log n)",
-        c: "O(n^2)",
-        d: "O(1)",
-        correct: "b"
-    },
-    {
-        question: "Which data structure uses LIFO?",
-        a: "Queue",
-        b: "Stack",
-        c: "Array",
-        d: "Linked List",
-        correct: "b"
-    },
-    {
-        question: "What is the best case time complexity of bubble sort?",
-        a: "O(n)",
-        b: "O(n log n)",
-        c: "O(n^2)",
-        d: "O(log n)",
+        question: "What is the correct syntax for referring to an external JavaScript file called `script.js`?",
+        a: "<script src='script.js'>",
+        b: "<script href='script.js'>",
+        c: "<script name='script.js'>",
+        d: "<script link='script.js'>",
         correct: "a"
     },
     {
-        question: "Which is an example of a dynamic data structure?",
-        a: "Array",
-        b: "Stack",
-        c: "Queue",
-        d: "Linked List",
+        question: "Which method is used to add a new item to the end of an array?",
+        a: "add()",
+        b: "push()",
+        c: "append()",
+        d: "insert()",
+        correct: "b"
+    },
+    {
+        question: "What does the `console.log()` function do?",
+        a: "Displays a message in an alert box",
+        b: "Outputs a message to the web page",
+        c: "Prints a message to the console",
+        d: "Logs a message in the server",
+        correct: "c"
+    },
+    {
+        question: "Which of the following is used to declare a variable in JavaScript?",
+        a: "var",
+        b: "int",
+        c: "let",
+        d: "Both a and c",
         correct: "d"
     },
     {
-        question: "What does 'DSA' stand for?",
-        a: "Data Systems Algorithm",
-        b: "Data Structures Algorithm",
-        c: "Data Structures and Algorithms",
-        d: "Dynamic Systems and Algorithms",
-        correct: "c"
-    }
+        question: "What is the output of `typeof NaN` in JavaScript?",
+        a: "number",
+        b: "NaN",
+        c: "undefined",
+        d: "object",
+        correct: "a"
+    },
+
 ];
+
 
 const quiz = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');

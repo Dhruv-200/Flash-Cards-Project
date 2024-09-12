@@ -1,46 +1,48 @@
-
-quizData = [
+const quizData = [
     {
-        question: "What is the time complexity of binary search?",
-        a: "O(n)",
-        b: "O(log n)",
-        c: "O(n^2)",
-        d: "O(1)",
-        correct: "b"
-    },
-    {
-        question: "Which data structure uses LIFO?",
-        a: "Queue",
-        b: "Stack",
-        c: "Array",
-        d: "Linked List",
-        correct: "b"
-    },
-    {
-        question: "What is the best case time complexity of bubble sort?",
-        a: "O(n)",
-        b: "O(n log n)",
-        c: "O(n^2)",
-        d: "O(log n)",
+        question: "Which of the following is the correct way to define a function in Python?",
+        a: "def myFunction():",
+        b: "function myFunction():",
+        c: "define myFunction():",
+        d: "func myFunction():",
         correct: "a"
     },
     {
-        question: "Which is an example of a dynamic data structure?",
-        a: "Array",
-        b: "Stack",
-        c: "Queue",
-        d: "Linked List",
-        correct: "d"
+        question: "Which symbol is used for single-line comments in Python?",
+        a: "//",
+        b: "#",
+        c: "/*",
+        d: "--",
+        correct: "b"
     },
     {
-        question: "What does 'DSA' stand for?",
-        a: "Data Systems Algorithm",
-        b: "Data Structures Algorithm",
-        c: "Data Structures and Algorithms",
-        d: "Dynamic Systems and Algorithms",
-        correct: "c"
-    }
+        question: "What is the output of the following code? `print(type([]))`",
+        a: "<class 'list'>",
+        b: "<class 'array'>",
+        c: "<type 'list'>",
+        d: "<class 'object'>",
+        correct: "a"
+    },
+    {
+        question: "Which of the following is used to create a new dictionary in Python?",
+        a: "dict()",
+        b: "new dict",
+        c: "dictionary()",
+        d: "create dict",
+        correct: "a"
+    },
+    {
+        question: "How do you add an item to the end of a list in Python?",
+        a: "list.add(item)",
+        b: "list.append(item)",
+        c: "list.insert(item)",
+        d: "list.push(item)",
+        correct: "b"
+    },
+
 ];
+
+
 
 const quiz = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');
