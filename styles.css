@@ -23,9 +23,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  /*  background-image: linear-gradient(135deg, #cc2b5e    , #753a88);*/        
+  /*  background: linear-gradient(135deg, #cc2b5e    , #753a88);*/        
 
-     background-image: linear-gradient(135deg, #bdc3c7   , #5586b8);       
+     background: linear-gradient(135deg, #bdc3c7   , #5586b8);       
     background-size: cover;
    
 }
