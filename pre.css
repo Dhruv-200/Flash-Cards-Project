@@ -79,6 +79,7 @@ button{
     color: white;
     margin-top: 20px;
     width: 100%; 
+    display: none;
 }
 
 #result {
@@ -86,4 +87,12 @@ button{
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#home {
+    display: none;
 }

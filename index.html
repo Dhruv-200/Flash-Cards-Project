@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <header>
         <h1>Flash Cards</h1>
     </header>
+
     <div class="container">
         <div class="flash-cards">
-        
-            <button class="card-button" onclick="location.href='dsa.html'">DSA</button>
-            <button class="card-button" onclick="location.href='javascript.html'">JavaScript</button>
-            <button class="card-button" onclick="location.href='python.html'">Python</button>
-            <button class="card-button" onclick="location.href='java.html'">Java</button>
-            <button class="card-button" onclick="location.href='c.html'">C</button>
-            <button class="card-button" onclick="location.href='c++.html'">C++</button>
-        </div>
-    
-        <div class="vertical-divider"></div>
-    
-        <div class="quiz-section">
-            <textarea placeholder="Type Your Paragraph In Here"></textarea>
-            <button class="create-quiz">Create Quiz</button>
+            <button class="card-button" data-subject="dsa" onclick="displaySubjectInfo('dsa')">DSA</button>
+            <button class="card-button" data-subject="javascript" onclick="displaySubjectInfo('javascript')">JavaScript</button>
+            <button class="card-button" data-subject="python" onclick="displaySubjectInfo('python')">Python</button>
+            <button class="card-button" data-subject="java" onclick="displaySubjectInfo('java')">Java</button>
+            <button class="card-button" data-subject="c" onclick="displaySubjectInfo('c')">C</button>
+            <button class="card-button" data-subject="cpp" onclick="displaySubjectInfo('cpp')">C++</button>
         </div>
     </div>
-    
-    
 
-    <script src="script.js"></script>
+    <!-- Sidebar container for displaying subject info -->
+    <div id="sidebar" class="sidebar">
+        <div class="subject-info" id="subject-info">
+            <h2>Subject Information</h2>
+            <p id="subject-description">Hover over a subject to see details</p>
+            <button id="start-quiz-button" class="hidden">Start Quiz</button>
+            <button onclick="closeSidebar()">Close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
