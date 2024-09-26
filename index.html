@@ -8,29 +8,48 @@
 </head>
 <body>
     <header>
-        <h1>Flash Cards</h1>
+        <div class="navbar">
+            <div class="logo">QUIZTIME</div>
+
+        </div>
+        <div class="hero-section">
+            <h1>Improve your mind</h1>
+            <p>Do you like quizzes and competitions? Find or create quizzes on any topic! Play, share, and study in one app.</p>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="flash-cards">
-            <button class="card-button" data-subject="dsa" onclick="displaySubjectInfo('dsa')">DSA</button>
-            <button class="card-button" data-subject="javascript" onclick="displaySubjectInfo('javascript')">JavaScript</button>
-            <button class="card-button" data-subject="python" onclick="displaySubjectInfo('python')">Python</button>
-            <button class="card-button" data-subject="java" onclick="displaySubjectInfo('java')">Java</button>
-            <button class="card-button" data-subject="c" onclick="displaySubjectInfo('c')">C</button>
-            <button class="card-button" data-subject="cpp" onclick="displaySubjectInfo('cpp')">C++</button>
+    <section class="subject-section">
+        <div class="subject-card">
+            <h3>Data Structures and Algorithms</h3>
+            <p>Study DSA at home or on the go!</p>
+            <a href="dsa.html" class="learn-more-btn">Learn more</a>
         </div>
-    </div>
-
-    <!-- Sidebar container for displaying subject info -->
-    <div id="sidebar" class="sidebar">
-        <div class="subject-info" id="subject-info">
-            <h2>Subject Information</h2>
-            <p id="subject-description">Hover over a subject to see details</p>
-            <button id="start-quiz-button" class="hidden">Start Quiz</button>
-            <button onclick="closeSidebar()">Close</button>
+        <div class="subject-card">
+            <h3>JavaScript</h3>
+            <p>Find and play quizzes on JavaScript!</p>
+            <a href="javascript.html" class="learn-more-btn">Learn more</a>
         </div>
-    </div>
+        <div class="subject-card">
+            <h3>Python</h3>
+            <p>Challenge yourself with Python quizzes!</p>
+            <a href="python.html" class="learn-more-btn">Learn more</a>
+        </div>
+        <div class="subject-card">
+            <h3>Java</h3>
+            <p>Explore Java quizzes for deeper learning!</p>
+            <a href="java.html" class="learn-more-btn">Learn more</a>
+        </div>
+        <div class="subject-card">
+            <h3>C Programming</h3>
+            <p>Master the basics with C quizzes!</p>
+            <a href="c.html" class="learn-more-btn">Learn more</a>
+        </div>
+        <div class="subject-card">
+            <h3>C++ Programming</h3>
+            <p>Enhance your skills with C++ quizzes!</p>
+            <a href="cpp.html" class="learn-more-btn">Learn more</a>
+        </div>
+    </section>
 
     <script src="main.js"></script>
 </body>
