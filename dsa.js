@@ -1,43 +1,82 @@
-
-quizData = [
+const quizData = [
+    {
+        question: "Which of the following is a linear data structure?",
+        a: "Tree",
+        b: "Graph",
+        c: "Linked List",
+        d: "Heap",
+        correct: "c"
+    },
+    {
+        question: "Which algorithm is used for sorting?",
+        a: "Binary Search",
+        b: "Quick Sort",
+        c: "DFS",
+        d: "BFS",
+        correct: "b"
+    },
     {
         question: "What is the time complexity of binary search?",
         a: "O(n)",
-        b: "O(log n)",
-        c: "O(n^2)",
-        d: "O(1)",
-        correct: "b"
+        b: "O(n^2)",
+        c: "O(log n)",
+        d: "O(n log n)",
+        correct: "c"
     },
     {
-        question: "Which data structure uses LIFO?",
+        question: "Which of the following data structures is based on LIFO?",
         a: "Queue",
         b: "Stack",
-        c: "Array",
-        d: "Linked List",
+        c: "Heap",
+        d: "Tree",
         correct: "b"
     },
     {
-        question: "What is the best case time complexity of bubble sort?",
-        a: "O(n)",
-        b: "O(n log n)",
-        c: "O(n^2)",
-        d: "O(log n)",
-        correct: "a"
+        question: "What is the Big O notation used for?",
+        a: "Describing the correctness of an algorithm",
+        b: "Describing the efficiency of an algorithm",
+        c: "Describing the size of data",
+        d: "Describing the types of data",
+        correct: "b"
+    },
+    {
+        question: "Which of the following algorithms is used for searching in a graph?",
+        a: "Quick Sort",
+        b: "Merge Sort",
+        c: "Binary Search",
+        d: "Depth-First Search",
+        correct: "d"
+    },
+    {
+        question: "What does a hash table use to store data?",
+        a: "Heap",
+        b: "Hash function",
+        c: "Binary tree",
+        d: "Linked list",
+        correct: "b"
+    },
+    {
+        question: "Which data structure is used in the Breadth-First Search algorithm?",
+        a: "Stack",
+        b: "Queue",
+        c: "Linked List",
+        d: "Tree",
+        correct: "b"
+    },
+    {
+        question: "Which algorithm has the best time complexity for sorting?",
+        a: "Bubble Sort",
+        b: "Selection Sort",
+        c: "Merge Sort",
+        d: "Insertion Sort",
+        correct: "c"
     },
     {
         question: "Which is an example of a dynamic data structure?",
         a: "Array",
-        b: "Stack",
-        c: "Queue",
-        d: "Linked List",
-        correct: "d"
-    },
-    {
-        question: "What does 'DSA' stand for?",
-        a: "Data Systems Algorithm",
-        b: "Data Structures Algorithm",
-        c: "Data Structures and Algorithms",
-        d: "Dynamic Systems and Algorithms",
+        b: "Static List",
+        c: "Binary Tree",
+        d: "Fixed List",
         correct: "c"
     }
 ];

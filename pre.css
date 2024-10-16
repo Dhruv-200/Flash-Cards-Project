@@ -1,20 +1,29 @@
-/* Backgrond*/
-body {
+h1
+{
+    margin: 0;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #00796b; 
+}
+body 
+{
     font-family: sans-serif, sans-serif, sans-serif, sans-serif, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     font-family: sans-serif;
-    color: black;
-    background: linear-gradient(135deg, #bdc3c7   , #5586b8);   
+    color: #004d40;
+    background-color: #e0f7fa;
     background-size: cover; 
 }
 
-header h1 {
+header h1 
+{
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -25,9 +34,14 @@ header h1 {
    
     background-color: transparent;
     border: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 800px; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-button{
+button
+{
     display: inline-block;
     margin-left: 10px;
     padding: 10px;
@@ -37,7 +51,8 @@ button{
     cursor: pointer;
     width: auto;
 }
-.option-btn {
+.option-btn 
+{
     display: inline-block;
     margin-bottom: 10px;
     padding: 10px;
@@ -45,54 +60,65 @@ button{
     background-color: #f1f1f1;
     border-radius: 5px;
     cursor: pointer;
-    width: auto; }
+    width: auto; 
+}
 
-.option-btn:hover {
+.option-btn:hover 
+{
     border-color: #000;
     background-color: #d4d4d4;
 }
 
-.option-btn.selected {
-    border-color: #007bff;
-    background-color: #82ffe6;
+.option-btn.selected 
+{
+    border-color: #0037ff;
+    background-color: #ccc9db;
 }
 
-.option-btn.correct {
-    border-color: #14ce3f;
-    background-color: #d4edda; 
+.option-btn.correct 
+{
+    border-color: #00ff00;
+    background-color: white; 
 }
 
-.option-btn.incorrect {
+.option-btn.incorrect 
+{
     border-color: #dc3545; 
     background-color: #f8d7da; 
 }
 
-#submit {
-    background-color: #1c527d;
+#submit 
+{
+    background-color: #00796b;
     color: white;
     margin-top: 20px;
     width: 100%; 
 }
 
-#home {
-    background-color: #1c527d;
+#home 
+{
+    background-color: #00796b;
     color: white;
     margin-top: 20px;
     width: 100%; 
     display: none;
 }
 
-#result {
+#result 
+{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
 }
 
-.hidden {
+.hidden 
+{
     display: none;
 }
 
-#home {
+#home 
+{
     display: none;
 }
+

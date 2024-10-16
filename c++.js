@@ -1,43 +1,83 @@
 const quizData = [
     {
-        question: "Which header file is necessary for input and output operations in C++?",
-        a: "<iostream>",
-        b: "<stdio.h>",
-        c: "<stdlib.h>",
-        d: "<inputoutput>",
-        correct: "a"
-    },
-    {
-        question: "What is the correct syntax to create a class in C++?",
-        a: "class MyClass {}",
-        b: "class MyClass[]",
-        c: "create class MyClass {}",
-        d: "struct MyClass {}",
-        correct: "a"
-    },
-    {
-        question: "Which operator is used to access members of a class or structure in C++?",
-        a: ".",
-        b: "->",
-        c: "::",
-        d: "#",
-        correct: "a"
-    },
-    {
-        question: "What is the output of the following code? `int x = 5; std::cout << ++x;`",
-        a: "5",
-        b: "6",
-        c: "7",
-        d: "error",
+        question: "Who developed the C++ programming language?",
+        a: "Dennis Ritchie",
+        b: "Bjarne Stroustrup",
+        c: "James Gosling",
+        d: "Guido van Rossum",
         correct: "b"
     },
     {
-        question: "What is the purpose of the `#include` directive in C++?",
-        a: "To include code from other files",
-        b: "To define constants",
-        c: "To declare variables",
-        d: "To create functions",
+        question: "Which of the following is NOT a C++ feature?",
+        a: "Classes",
+        b: "Polymorphism",
+        c: "Encapsulation",
+        d: "Reflection",
+        correct: "d"
+    },
+    {
+        question: "What is a virtual function in C++?",
+        a: "A function that cannot be called",
+        b: "A function that only exists in memory",
+        c: "A function that can be overridden",
+        d: "A function with no return type",
+        correct: "c"
+    },
+    {
+        question: "Which of the following supports dynamic memory management in C++?",
+        a: "malloc()",
+        b: "new",
+        c: "alloc()",
+        d: "init()",
+        correct: "b"
+    },
+    {
+        question: "What does STL stand for in C++?",
+        a: "Standard Type Library",
+        b: "Standard Template Library",
+        c: "System Template Library",
+        d: "Simple Template Library",
+        correct: "b"
+    },
+    {
+        question: "Which access modifier allows members to be accessed from anywhere?",
+        a: "private",
+        b: "protected",
+        c: "public",
+        d: "internal",
+        correct: "c"
+    },
+    {
+        question: "Which of the following is used for multiple inheritance in C++?",
+        a: "virtual base classes",
+        b: "concrete classes",
+        c: "derived classes",
+        d: "subclasses",
         correct: "a"
+    },
+    {
+        question: "Which of the following allows C++ to perform both low-level and high-level programming?",
+        a: "OOP and procedural programming",
+        b: "Low-level pointers",
+        c: "Data encapsulation",
+        d: "Template programming",
+        correct: "a"
+    },
+    {
+        question: "What is a constructor in C++?",
+        a: "A function used to create an object",
+        b: "A function used to initialize an object",
+        c: "A function used to allocate memory",
+        d: "A function used to destroy an object",
+        correct: "b"
+    },
+    {
+        question: "Which keyword is used to inherit a class in C++?",
+        a: "class",
+        b: "inherit",
+        c: "extends",
+        d: "public",
+        correct: "d"
     }
 ];
 

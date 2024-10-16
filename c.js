@@ -1,5 +1,12 @@
-
-quizData = [
+const quizData = [
+    {
+        question: "Who is the creator of the C programming language?",
+        a: "Bjarne Stroustrup",
+        b: "Dennis Ritchie",
+        c: "James Gosling",
+        d: "Ken Thompson",
+        correct: "b"
+    },
     {
         question: "Which of the following is NOT a valid C data type?",
         a: "int",
@@ -9,38 +16,71 @@ quizData = [
         correct: "c"
     },
     {
-        question: "Which of the following operators has the highest precedence in C?",
-        a: "+",
-        b: "*",
-        c: "++",
-        d: "-",
-        correct: "c"
-    },
-    {
-        question: "What keyword is used to define a constant value in C",
-        a: "const",
-        b: "constant",
-        c: "fixed",
-        d: "none",
-        correct: "a"
-    },
-    {
-        question: "What is the data type used to represent a single character in C?",
-        a: "char",
-        b: "string",
-        c: "double",
-        d: "letter",
-        correct: "a"
-    },
-    {
-        question: "What is the keyword used to include standard libraries in C programs?",
-        a: "import",
-        b: "include",
-        c: "add",
-        d: "inherit",
+        question: "What is the operator used to access memory addresses in C?",
+        a: "*",
+        b: "&",
+        c: "->",
+        d: "^",
         correct: "b"
+    },
+    {
+        question: "Which function is used to dynamically allocate memory in C?",
+        a: "malloc()",
+        b: "alloc()",
+        c: "new()",
+        d: "calloc()",
+        correct: "a"
+    },
+    {
+        question: "What is the standard output function in C?",
+        a: "print()",
+        b: "printf()",
+        c: "cout",
+        d: "echo()",
+        correct: "b"
+    },
+    {
+        question: "Which of the following is used to define a constant in C?",
+        a: "const",
+        b: "define",
+        c: "constant",
+        d: "let",
+        correct: "b"
+    },
+    {
+        question: "Which of the following loops is present in C?",
+        a: "for",
+        b: "repeat",
+        c: "foreach",
+        d: "whileFor",
+        correct: "a"
+    },
+    {
+        question: "Which operator in C is used for dereferencing a pointer?",
+        a: "*",
+        b: "&",
+        c: "+",
+        d: "%",
+        correct: "a"
+    },
+    {
+        question: "What is the return type of the main function in a C program?",
+        a: "void",
+        b: "int",
+        c: "float",
+        d: "char",
+        correct: "b"
+    },
+    {
+        question: "Which header file is required for using standard I/O functions in C?",
+        a: "<stdio.h>",
+        b: "<stdlib.h>",
+        c: "<iostream>",
+        d: "<conio.h>",
+        correct: "a"
     }
 ];
+
 
 const quiz = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');

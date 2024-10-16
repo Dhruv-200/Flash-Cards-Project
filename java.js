@@ -1,47 +1,88 @@
-
-quizData = [
+const quizData = [
     {
-        question: "Basic Syntax What is the correct way to declare a variable in Java that holds an integer value?",
-        a: "integer num =10",
-        b: "int num = 10",
-        c: "num = 10",
-        d: "int = 10",
-        correct: "b"
-    },
-    {
-        question: "Object-Oriented Programming In Java, what is the access modifier that allows a member of a class to be accessible only within the same package?",
-        a: "Public",
-        b: "Private",
-        c: "Default",
-        d: "Protected",
+        question: "Who is the creator of the Java programming language?",
+        a: "Brendan Eich",
+        b: "Dennis Ritchie",
+        c: "James Gosling",
+        d: "Guido van Rossum",
         correct: "c"
     },
     {
-        question: "Collections Framework Which of the following Java collection classes implements the List interface?",
-        a: "Hashset",
-        b: "ArrayList",
-        c: "HashMap",
-        d: "TreeSet",
+        question: "What does JVM stand for in Java?",
+        a: "Java Variable Manager",
+        b: "Java Virtual Machine",
+        c: "Java Version Module",
+        d: "Java Value Memory",
         correct: "b"
     },
     {
-        question: "How do you declare an array of integers in Java?",
-        a: "int[] arr",
-        b: "integer[] arr",
-        c: "int.[] arr",
-        d: "int arr",
+        question: "Which of the following is a core principle of Java?",
+        a: "Write Once, Run Anywhere",
+        b: "Run Once, Write Anywhere",
+        c: "Run Once, Use Anywhere",
+        d: "Write Twice, Run Anywhere",
         correct: "a"
     },
     {
-        question: "What keyword is used to inherit a class in Java?",
+        question: "Which keyword is used to inherit a class in Java?",
         a: "extends",
-        b: "new",
-        c: "inherites",
-        d: "class",
+        b: "inherits",
+        c: "super",
+        d: "base",
+        correct: "a"
+    },
+    {
+        question: "What is the main memory management mechanism in Java?",
+        a: "Manual memory management",
+        b: "Pointer management",
+        c: "Garbage collection",
+        d: "Destructors",
+        correct: "c"
+    },
+    {
+        question: "Which of the following is NOT a Java access modifier?",
+        a: "public",
+        b: "protected",
+        c: "internal",
+        d: "private",
+        correct: "c"
+    },
+    {
+        question: "Which keyword is used to create a thread in Java?",
+        a: "execute",
+        b: "thread",
+        c: "run",
+        d: "new Thread()",
+        correct: "d"
+    },
+    {
+        question: "What is the default value of a boolean in Java?",
+        a: "true",
+        b: "false",
+        c: "null",
+        d: "0",
+        correct: "b"
+    },
+    {
+        question: "Which package contains the main collection framework in Java?",
+        a: "java.io",
+        b: "java.utils",
+        c: "java.collection",
+        d: "java.util",
+        correct: "d"
+    },
+    {
+        question: "Which of the following is used to handle exceptions in Java?",
+        a: "try-catch",
+        b: "if-else",
+        c: "for-loop",
+        d: "switch-case",
         correct: "a"
     }
 ];
 
+
+// HTML elements for quiz
 const quiz = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');
 const result = document.getElementById('result');
@@ -49,6 +90,7 @@ const homeButton = document.getElementById('home');
 let score = 0;
 let selectedAnswers = {};
 
+// Load Quiz Questions Dynamically
 function loadQuiz() {
     quiz.innerHTML = '';
 
@@ -72,6 +114,7 @@ function loadQuiz() {
     });
 }
 
+// Handle Answer Selection
 function selectAnswer(questionIndex, option, button) {
     const buttons = document.querySelectorAll(`.question-container:nth-child(${questionIndex + 1}) .option-btn`);
     
@@ -81,12 +124,12 @@ function selectAnswer(questionIndex, option, button) {
     selectedAnswers[questionIndex] = option;
 }
 
+// Handle Quiz Submission and Scoring
 submitButton.addEventListener('click', () => {
     score = 0; 
     
     quizData.forEach((q, index) => {
         const buttons = document.querySelectorAll(`.question-container:nth-child(${index + 1}) .option-btn`);
-        
         
         if (selectedAnswers[index] === q.correct) {
             score++; 
@@ -105,14 +148,11 @@ submitButton.addEventListener('click', () => {
         });
     });
 
-    
     result.textContent = `You scored ${score}/${quizData.length}`;
     result.style.display = 'block';
-    
-    
+
     submitButton.style.display = 'none';
     homeButton.style.display = 'block';
 });
-
 
 loadQuiz();

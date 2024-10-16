@@ -1,47 +1,85 @@
 const quizData = [
     {
-        question: "Which of the following is the correct way to define a function in Python?",
-        a: "def myFunction():",
-        b: "function myFunction():",
-        c: "define myFunction():",
-        d: "func myFunction():",
-        correct: "a"
+        question: "Who created Python?",
+        a: "James Gosling",
+        b: "Brendan Eich",
+        c: "Guido van Rossum",
+        d: "Bjarne Stroustrup",
+        correct: "c"
     },
     {
-        question: "Which symbol is used for single-line comments in Python?",
-        a: "//",
-        b: "#",
-        c: "/*",
-        d: "--",
+        question: "Which feature of Python makes it easy to read and use?",
+        a: "Complicated syntax",
+        b: "Simple syntax",
+        c: "Low-level syntax",
+        d: "Hard syntax",
         correct: "b"
     },
     {
-        question: "What is the output of the following code? `print(type([]))`",
-        a: "<class 'list'>",
-        b: "<class 'array'>",
-        c: "<type 'list'>",
-        d: "<class 'object'>",
-        correct: "a"
+        question: "Which data type is immutable in Python?",
+        a: "List",
+        b: "Set",
+        c: "Tuple",
+        d: "Dictionary",
+        correct: "c"
     },
     {
-        question: "Which of the following is used to create a new dictionary in Python?",
-        a: "dict()",
-        b: "new dict",
-        c: "dictionary()",
-        d: "create dict",
-        correct: "a"
+        question: "What is a key feature of Python?",
+        a: "Manual memory management",
+        b: "Object-oriented only",
+        c: "Interpreted language",
+        d: "Static typing",
+        correct: "c"
     },
     {
-        question: "How do you add an item to the end of a list in Python?",
-        a: "list.add(item)",
-        b: "list.append(item)",
-        c: "list.insert(item)",
-        d: "list.push(item)",
+        question: "Which library is used for data analysis in Python?",
+        a: "NumPy",
+        b: "Pandas",
+        c: "Matplotlib",
+        d: "TensorFlow",
         correct: "b"
     },
-
+    {
+        question: "Which keyword is used to define a function in Python?",
+        a: "function",
+        b: "def",
+        c: "func",
+        d: "lambda",
+        correct: "b"
+    },
+    {
+        question: "Which Python feature allows code reuse?",
+        a: "Classes",
+        b: "Variables",
+        c: "Loops",
+        d: "Modules",
+        correct: "d"
+    },
+    {
+        question: "What is the output of print(2 ** 3) in Python?",
+        a: "6",
+        b: "8",
+        c: "9",
+        d: "12",
+        correct: "b"
+    },
+    {
+        question: "Which of the following is a correct way to comment in Python?",
+        a: "// This is a comment",
+        b: "# This is a comment",
+        c: "/* This is a comment */",
+        d: "<!-- This is a comment -->",
+        correct: "b"
+    },
+    {
+        question: "Which Python function is used to iterate over a sequence?",
+        a: "iterate()",
+        b: "for()",
+        c: "loop()",
+        d: "range()",
+        correct: "d"
+    }
 ];
-
 
 
 const quiz = document.getElementById('quiz');

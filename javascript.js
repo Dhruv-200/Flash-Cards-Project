@@ -1,45 +1,84 @@
 const quizData = [
     {
-        question: "What is the correct syntax for referring to an external JavaScript file called `script.js`?",
-        a: "<script src='script.js'>",
-        b: "<script href='script.js'>",
-        c: "<script name='script.js'>",
-        d: "<script link='script.js'>",
-        correct: "a"
-    },
-    {
-        question: "Which method is used to add a new item to the end of an array?",
-        a: "add()",
-        b: "push()",
-        c: "append()",
-        d: "insert()",
+        question: "Who created JavaScript in 1995?",
+        a: "Dennis Ritchie",
+        b: "Brendan Eich",
+        c: "James Gosling",
+        d: "Guido van Rossum",
         correct: "b"
     },
     {
-        question: "What does the `console.log()` function do?",
-        a: "Displays a message in an alert box",
-        b: "Outputs a message to the web page",
-        c: "Prints a message to the console",
-        d: "Logs a message in the server",
+        question: "Which of the following is used to manipulate the DOM in JavaScript?",
+        a: "Variables",
+        b: "Document Object Model",
+        c: "Control Structures",
+        d: "None of the above",
+        correct: "b"
+    },
+    {
+        question: "Which JavaScript feature allows non-blocking operations?",
+        a: "Synchronous programming",
+        b: "Event-driven programming",
+        c: "Asynchronous programming",
+        d: "Procedural programming",
         correct: "c"
     },
     {
-        question: "Which of the following is used to declare a variable in JavaScript?",
-        a: "var",
-        b: "int",
-        c: "let",
-        d: "Both a and c",
+        question: "Which of the following is a JavaScript framework?",
+        a: "React",
+        b: "Laravel",
+        c: "Django",
+        d: "Flask",
+        correct: "a"
+    },
+    {
+        question: "Which method is used to attach event listeners in JavaScript?",
+        a: "getElementById()",
+        b: "addEventListener()",
+        c: "removeEventListener()",
+        d: "clickListener()",
+        correct: "b"
+    },
+    {
+        question: "What does ECMAScript standardize?",
+        a: "CSS",
+        b: "HTML",
+        c: "JavaScript",
+        d: "SQL",
+        correct: "c"
+    },
+    {
+        question: "Which of the following is NOT a valid way to declare a variable in JavaScript?",
+        a: "let",
+        b: "const",
+        c: "var",
+        d: "static",
         correct: "d"
     },
     {
-        question: "What is the output of `typeof NaN` in JavaScript?",
-        a: "number",
-        b: "NaN",
-        c: "undefined",
-        d: "object",
-        correct: "a"
+        question: "What feature allows JavaScript to handle multiple user actions at once?",
+        a: "Procedural programming",
+        b: "Event-driven programming",
+        c: "Parallel processing",
+        d: "Synchronous execution",
+        correct: "b"
     },
-
+    {
+        question: "Which of the following helps prevent memory leaks in JavaScript?",
+        a: "Manual memory allocation",
+        b: "Automatic garbage collection",
+        c: "Destructors",
+        d: "Pointers",
+        correct: "b"
+    },
+    {
+        question: "What is a Promise in JavaScript?",
+        a: "A loop control structure",
+        b: "An error handling mechanism",
+        c: "An object for asynchronous operations",
+        d: "A security feature",
+        correct: "c"
+    }
 ];
 
 
